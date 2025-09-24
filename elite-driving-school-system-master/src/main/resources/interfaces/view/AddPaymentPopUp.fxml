@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #f0f4f7;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.elitedrivingschoolsystemormcoursework.controller.PaymentPopUpController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="20.0" layoutY="20.0" prefHeight="610.0" prefWidth="360.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px; -fx-border-radius: 10px;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <effect>
+                <DropShadow>
+                    <color>
+                        <Color opacity="0.1" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+                    <children>
+                        <Label text="Payment ID :">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblPaymentId" text="01">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </HBox>
+                <VBox alignment="CENTER_LEFT" prefHeight="450.0" prefWidth="360.0" spacing="15.0">
+                    <children>
+                        <VBox prefWidth="100.0">
+                            <children>
+                                <Label text="Payment Date" />
+                                <TextField fx:id="txtPaymentDate" prefHeight="35.0" style="-fx-background-color: #f8f9fa; -fx-border-color: #ced4da; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="100.0">
+                            <children>
+                                <Label text="Student ID" />
+                                <ComboBox fx:id="cmbStudentId" prefHeight="35.0" prefWidth="320.0" style="-fx-background-color: #f8f9fa; -fx-border-color: #ced4da; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="100.0">
+                            <children>
+                                <Label text="Amount" />
+                                <TextField fx:id="lblAmount" editable="false" prefHeight="35.0" style="-fx-background-color: #f8f9fa; -fx-border-color: #ced4da; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="100.0">
+                            <children>
+                                <Label text="Payment Method" />
+                                <ComboBox fx:id="cmbPaymentMethod" prefHeight="35.0" prefWidth="320.0" style="-fx-background-color: #f8f9fa; -fx-border-color: #ced4da; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                            </children>
+                        </VBox>
+                        <VBox prefWidth="100.0">
+                            <children>
+                                <Label text="Status" />
+                                <TextField fx:id="txtStatus" prefHeight="35.0" style="-fx-background-color: #f8f9fa; -fx-border-color: #ced4da; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                            </children>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                    </padding>
+                </VBox>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="360.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSaveOncAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #2980b9; -fx-text-fill: white; -fx-background-radius: 5;" text="Save">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-background-radius: 5;" text="Update">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
